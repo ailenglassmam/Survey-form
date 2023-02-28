@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- my CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Survey Form Project - freeCodeCamp</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="picture"></div>
+    <div id="information">
+      <h1 id="title">Get in touch!</h1>
+      <p id="description">Fill the form to become a part of team</p>
+      <form id="survey-form">
+        <fieldset id="personal-info">
+          <div id="info-a">
+            <label id="name-label">First name<input id="name" type="text" required></label>
+            <label id="last-label">Last name<input id="lastname" type="text" required></label>
+          </div>
+          <div id="info-b">
+            <label id="email-label">Email<input id="email" type="email" required></label>
+            <label id="number-label"> Enter your age <input id="number" type="number" min="18" max="120"></label>
+          </div>
+
+        </fieldset>
+        <fieldset id="gender-info">
+          <label><input type="radio" name="gender-type" class="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender-type" class="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender-type" class="gender" value="other" />Other</label>
+        </fieldset>
+        <fieldset id="professional-info">
+          <div id="resume-info">
+            <label id="role-label">Your current role
+              <select id="dropdown">
+                <option value="">Select...</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Part Time Job</option>
+                <option value="4">Freelancer</option>
+                <option value="5">Others</option>
+              </select>
+            </label>
+            <label>Upload your CV
+              <input id="cv-button" type="file" name="file"/>
+            </label>
+          </div>
+          <div id="presentation-info">
+            <label id="bio-label">Tell us a little about yourself
+              <textarea id="description-info"></textarea>
+            </label>
+          </div>
+          <div id="terms-conditions">
+            <label id="conditions-label">
+              <input type="checkbox" class="check" value="conditions" name="conditions">I accept the <a href="#">Terms
+                and
+                Conditions</a>
+            </label>
+            <label id="conditions-label">
+              <input type="checkbox" class="check" value="conditions" name="conditions">I accept receive emails with
+              information
+            </label>
+          </div>
+
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
